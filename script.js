@@ -31,6 +31,9 @@ btn_toggle.onclick = () => {
 btn_reset.onclick = () => {
   p.innerHTML = origin_word;
   length.value = origin_value;
+  calculation.innerHTML = "";
+  author.innerHTML = "630610732 TANHATAI KLUNGMAJAREON";
+  btn_toggle.innerText = "Show Calculation";
 }
 
 btn_search.onclick = () => {
