@@ -34,6 +34,7 @@ btn_reset.onclick = () => {
   calculation.innerHTML = "";
   author.innerHTML = "630610732 TANHATAI KLUNGMAJAREON";
   btn_toggle.innerText = "Show Calculation";
+  
 }
 
 btn_search.onclick = () => {
