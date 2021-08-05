@@ -10,6 +10,7 @@ const origin_value = length.value;
 const btn_reset = document.getElementById("reset");
 const btn_search = document.getElementById("search");
 let check = 0;
+const author_p = author.innerHTML;
 
 btn_toggle.onclick = () => {
   let id = 630610732 + parseInt(length.value);
@@ -21,7 +22,7 @@ btn_toggle.onclick = () => {
   }
   else{
     calculation.innerHTML = "";
-    author.innerHTML = "630610732 TANHATAI KLUNGMAJAREON";
+    author.innerHTML = author_p;
     btn_toggle.innerText = "Show Calculation";
     check = 0;
   }
@@ -29,12 +30,12 @@ btn_toggle.onclick = () => {
 
 // more codes for Search and Reset buttons here
 btn_reset.onclick = () => {
+  author.innerHTML = author_p;
   p.innerHTML = origin_word;
   length.value = origin_value;
   calculation.innerHTML = "";
-  author.innerHTML = "630610732 TANHATAI KLUNGMAJAREON";
-  btn_toggle.innerText = "Show Calculation";
-  
+  btn_toggle.innerHTML = "Show Calculation";
+  check = 0;
 }
 
 btn_search.onclick = () => {
